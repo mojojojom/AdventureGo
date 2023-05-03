@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*, *::before, *::after
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: $light-col;
+    font-family: 'Unbounded', cursive;
+}
+
+a
+{
+    text-decoration: none;
+}
+ul
+{
+    list-style: none;
+}
+
+
+// BUTTON
+.cbtn
+{
+    padding: 15px 30px;
+    border-radius: 100px;
+    color: $light-col;
+    font-size: 16px;
+    font-weight: 700;
+    transition: all ease-in-out 300ms;
+    border: none;
+    &-w-arrow
+    {
+        display: inline-flex;
+        gap: 10px;
+    }
+    &-primary
+    {
+        background-color: $primary-col;
+        &:hover
+        {
+            background-color: $text-col;
+        }
+    }
+    &-light
+    {
+        background-color: $light-col;
+        &:hover
+        {
+            background-color: $text-col;
+        }
+    }
+    &:hover
+    {
+        color: $light-col;
+    }
+}
+
+
+// OVERLAY
+.overlay
+{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: $dark-col;
+    opacity: 0.6;
+    z-index: 1;
+}
+
+
+
+// FOOTER
+.footer__
+{
+    &main
+    {
+        &-wrap
+        {
+            background-color: $primary-col;
+            padding: 15px 0;
+        }
+        &-inner
+        {
+            &-wrap
+            {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+        }
+        &-logo
+        {
+            color: $light-col;
+            font-weight: 400;
+            a
+            {
+                color: $light-col;
+                font-weight: 900;
+                transition: all ease-in-out 300ms;
+            }
+        }
+        &-links
+        {
+            a
+            {
+                color: $light-col;
+                font-size: 14px;
+                font-weight: 300;
+            }
+        }
+    }
+}

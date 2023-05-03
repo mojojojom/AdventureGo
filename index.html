@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AdventureGo</title>
+
+        <!-- JQUERY -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- BOOTSTRAP -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- FONTAWESOME -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- SLICK CAROUSEL -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- CUSTOM CSS -->
+        <link rel="stylesheet" href="/style/style.min.css">
+    </head>
+    <body>
+        
+        <!-- HEADER -->
+        <header class="header__main-wrap" id="main-header">
+            <nav class="container">
+
+                <div class="header__main-inner-wrap">
+                    <div class="header__logo-wrap">
+                        <a href="#" class="header__logo-icon">
+                            AdventureGo
+                        </a>
+                    </div>
+    
+                    <div class="header__menu-wrap">
+                        <div class="header__menu-icon-wrap">
+                            <span></span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </nav>
+
+            <!-- HIDDEN MENU -->
+            <div class="header__menu-links-wrap">
+                <ul>
+                    <li><a href="#" class="header__menu-links">Home</a></li>
+                    <li><a href="#" class="header__menu-links">About</a></li>
+                    <li><a href="#" class="header__menu-links">Destinations</a></li>
+                    <li><a href="#" class="header__menu-links">Packages</a></li>
+                    <li><a href="#" class="header__menu-links">Blogs</a></li>
+                    <li><a href="#" class="header__menu-links">Contact</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <!-- BANNER SECTION -->
+        <section class="h__banner-wrap">
+            <div class="h__banner-inner-wrap">
+                <div class="row">
+
+                    <!-- LEFT COLUMN -->
+                    <div class="col-6">
+                        <div class="h__banner-left-wrap">
+                            <div class="h__banner-heading-wrap">
+                                <h1 class="h__banner-heading">
+                                    Explore the<br>World with<br><span>AdventureGo</span>
+                                </h1>
+                                <p class="h__banner-subheading">Lorem ipsum dolor sit, amet consectetur adipisicing elit. In sequi similique quis corrupti quae obcaecati dolorem aperiam dignissimos reprehenderit veniam! Quo, debitis. Beatae cum eveniet eligendi. Maiores explicabo dolores neque.</p>
+                            </div>
+                            <div class="h__banner-btn-wrap">
+                                <a href="#" class="cbtn cbtn-w-arrow cbtn-primary">BOOK NOW <img src="/assets/icons/Arrow 1.svg" alt=""></a>
+                            </div>
+
+                            <div class="h__banner-steps-wrap mt-5">
+                                <div class="row">
+
+                                    <div class="col-4">
+                                        <div class="h__banner-steps-inner-wrap">
+                                            <div class="overlay"></div>
+                                            <img src="/assets/imgs/step-img-1.png" alt="Steps Background">
+                                            <h1 class="h__banner-steps-heading">SELECT</h1>
+                                            <p class="h__banner-steps-subheading">Choose the dates and destination for your trip.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-4">
+                                        <div class="h__banner-steps-inner-wrap">
+                                            <div class="overlay"></div>
+                                            <img src="/assets/imgs/step-img-1.png" alt="Steps Background">
+                                            <h1 class="h__banner-steps-heading">CHOOSE</h1>
+                                            <p class="h__banner-steps-subheading">Browse and select accommodations and activities.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-4">
+                                        <div class="h__banner-steps-inner-wrap">
+                                            <div class="overlay"></div>
+                                            <img src="/assets/imgs/step-img-1.png" alt="Steps Background">
+                                            <h1 class="h__banner-steps-heading">CONFIRM</h1>
+                                            <p class="h__banner-steps-subheading">Finalize your booking and complete the payment process.</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- RIGHT COLUMN -->
+                    <div class="col-6">
+                        <div class="h__banner-right-wrap" id="banner-right-col">
+                            <div class="overlay"></div>
+                            <div class="h__banner-right-heading-wrap">
+                                <h1 class="h__banner-right-heading-back"></h1>
+                                <h1 class="h__banner-right-heading"></h1>
+                            </div>
+
+                            <div class="row h__banner-right-slider-main-wrap">
+                                <div class="col-2"></div>
+                                <div class="col-10">
+                                    <div class="h__banner-right-slider-wrap">
+                                        <div class="h__banner-right-slider" id="h__banner-right-slider">
+                
+                                            <div class="h__banner-right-slide-item">
+                                                <div class="h__banner-right-slide-content">
+                                                    <div class="overlay"></div>
+                                                    <div class="h__banner-right-slide-item-location-wrap">
+                                                        <p class="h__banner-right-slide-item-location">Palawan</p>
+                                                    </div>
+                                                    <div class="h__banner-right-slide-item-wrap">
+                                                        <img class="h__banner-right-slide-item-img" src="/assets/imgs/photo0jpg.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="h__banner-right-slide-item">
+                                                
+                                                <div class="h__banner-right-slide-content">
+                                                    <div class="overlay"></div>
+                                                    <div class="h__banner-right-slide-item-location-wrap">
+                                                        <p class="h__banner-right-slide-item-location">Boracay</p>
+                                                    </div>
+                                                    <div class="h__banner-right-slide-item-wrap">
+                                                        <img class="h__banner-right-slide-item-img" src="/assets/imgs/boracay.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+        
+                                            <div class="h__banner-right-slide-item">
+                                                <div class="h__banner-right-slide-content">
+                                                    <div class="overlay"></div>
+                                                    <div class="h__banner-right-slide-item-location-wrap">
+                                                        <p class="h__banner-right-slide-item-location">Bohol</p>
+                                                    </div>
+                                                    <div class="h__banner-right-slide-item-wrap">
+                                                        <img class="h__banner-right-slide-item-img" src="/assets/imgs/GettyImages-135558476-8533a33260d9436c9bc432ce630ec732.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+        
+                                            <div class="h__banner-right-slide-item">
+                                                <div class="h__banner-right-slide-content">
+                                                    <div class="overlay"></div>
+                                                    <div class="h__banner-right-slide-item-location-wrap">
+                                                        <p class="h__banner-right-slide-item-location">Zambales</p>
+                                                    </div>
+                                                    <div class="h__banner-right-slide-item-wrap">
+                                                        <img class="h__banner-right-slide-item-img" src="/assets/imgs/zambales-botolan-mt-pinatubo-godwinhernaez-20191227.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SEARCH FORM -->
+        <section class="h__search-form-wrap">
+            <div class="container">
+                <div class="h__search-form-main-wrap">
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- POPULAR PLACES SECTION -->
+        <section class="h__popular-wrap">
+            <div class="container">
+                <div class="h__popular-heading-wrap">
+                    <p class="h__popular-subheading">What's Popular?</p>
+                    <h1 class="h__popular-heading">Places Not To Be Missed</h1>
+                </div>
+
+                <div class="h__popular-place-main-wrap">
+
+                    <div class="h__popular-place-img-wrap h__popular-place-img-wrap-1">
+                        <a href="#">
+                            <div class="overlay"></div>
+                            <div class="h__popular-place-location-wrap">
+                                <h1 class="h__popular-place-location">Sample Location</h1>
+                                <p class="h__popular-place-location-country">Country</p>
+                            </div>
+                            <img class="h__popular-place-img" src="/assets/imgs/Rectangle 19.png" alt="">
+                        </a>
+                    </div>
+                    <div class="h__popular-place-img-wrap h__popular-place-img-wrap-2">
+                        <a href="#">
+                            <div class="overlay"></div>
+                            <div class="h__popular-place-location-wrap">
+                                <h1 class="h__popular-place-location">Sample Location</h1>
+                                <p class="h__popular-place-location-country">Country</p>
+                            </div>
+                            <img class="h__popular-place-img" src="/assets/imgs/Rectangle 19.png" alt="">
+                        </a>
+                    </div>
+                    <div class="h__popular-place-img-wrap h__popular-place-img-wrap-3">
+                        <a href="#">
+                            <div class="overlay"></div>
+                            <div class="h__popular-place-location-wrap">
+                                <h1 class="h__popular-place-location">Sample Location</h1>
+                                <p class="h__popular-place-location-country">Country</p>
+                            </div>
+                            <img class="h__popular-place-img" src="/assets/imgs/Rectangle 19.png" alt="">
+                        </a>
+                    </div>
+                    <div class="h__popular-place-img-wrap h__popular-place-img-wrap-4">
+                        <a href="#">
+                            <div class="overlay"></div>
+                            <div class="h__popular-place-location-wrap">
+                                <h1 class="h__popular-place-location">Sample Location</h1>
+                                <p class="h__popular-place-location-country">Country</p>
+                            </div>
+                            <img class="h__popular-place-img" src="/assets/imgs/Rectangle 19.png" alt="">
+                        </a>
+                    </div>
+                    <div class="h__popular-place-img-wrap h__popular-place-img-wrap-5">
+                        <a href="#">
+                            <div class="overlay"></div>
+                            <div class="h__popular-place-location-wrap">
+                                <h1 class="h__popular-place-location">Sample Location</h1>
+                                <p class="h__popular-place-location-country">Country</p>
+                            </div>
+                            <img class="h__popular-place-img" src="/assets/imgs/Rectangle 19.png" alt="">
+                        </a>
+                    </div>
+                    <div class="h__popular-place-img-wrap h__popular-place-img-wrap-6">
+                        <a href="#">
+                            <div class="overlay"></div>
+                            <div class="h__popular-place-location-wrap">
+                                <h1 class="h__popular-place-location">Sample Location</h1>
+                                <p class="h__popular-place-location-country">Country</p>
+                            </div>
+                            <img class="h__popular-place-img" src="/assets/imgs/Rectangle 19.png" alt="">
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- DISCOVER SECTION -->
+        <section class="h__discover-wrap">
+            <div class="container">
+                
+                <div class="h__discover-header-wrap">
+                    <div class="h__discover-heading-wrap">
+                        <p class="h__discover-subheading">Wanderlust Awaits</p>
+                        <h1 class="h__discover-heading">Discover Your Next Adventure</h1>
+                    </div>
+
+                    <div class="h__discover-arrows-wrap">
+                        <span class="h__discover-arrows h__discover-arrows-left"><i class="fa-solid fa-arrow-left-long"></i></span>
+                        <span class="h__discover-arrows h__discover-arrows-right"><i class="fa-solid fa-arrow-right-long"></i></span>
+                    </div>
+                </div>
+
+                <div class="h__discover-places-wrap">
+                    <div class="h__discover-places-slider-wrap">
+                        <div class="h__discover-places-slider">
+
+                            <div class="h__discover-places-slide">
+                                <div class="h__discover-place-content-wrap">
+                                    <a href="#">
+                                        <div class="overlay"></div>
+                                        <div class="h__discover-place-img-wrap">
+                                            <img class="h__discover-place-img" src="/assets/imgs/Rectangle 19.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="h__discover-places-slide">
+                                <div class="h__discover-place-content-wrap">
+                                    <a href="#">
+                                        <div class="overlay"></div>
+                                        <div class="h__discover-place-img-wrap">
+                                            <img class="h__discover-place-img" src="/assets/imgs/Rectangle 19.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="h__discover-places-slide">
+                                <div class="h__discover-place-content-wrap">
+                                    <a href="#">
+                                        <div class="overlay"></div>
+                                        <div class="h__discover-place-img-wrap">
+                                            <img class="h__discover-place-img" src="/assets/imgs/Rectangle 19.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="h__discover-places-slide">
+                                <div class="h__discover-place-content-wrap">
+                                    <a href="#">
+                                        <div class="overlay"></div>
+                                        <div class="h__discover-place-img-wrap">
+                                            <img class="h__discover-place-img" src="/assets/imgs/Rectangle 19.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="h__discover-places-slide">
+                                <div class="h__discover-place-content-wrap">
+                                    <a href="#">
+                                        <div class="overlay"></div>
+                                        <div class="h__discover-place-img-wrap">
+                                            <img class="h__discover-place-img" src="/assets/imgs/Rectangle 19.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="h__discover-places-btn-wrap d-flex justify-content-center pt-4">
+                    <a href="#" class="h__discover-places-btn cbtn cbtn-primary cbtn-w-arrow">
+                        VIEW ALL <img src="/assets/icons/Arrow 1.svg" alt="">
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- PACKAGES WRAP -->
+        <section class="h__packages-wrap">
+            <div class="container">
+                <div class="h__packages-heading-wrap">
+                    <p class="h__packages-subheading">Unwrap Your Dream Destination</p>
+                    <h1 class="h__packages-heading">Discover Our Travel Packages</h1>
+                </div>
+
+                <div class="h__packages-level-nav-wrap">
+                    <div class="h__packages-level-nav-inner-wrap">
+                        <a class="h__packages-level-nav active" data-id="bronze">
+                            <div class="h__packages-level-nav-txt">BRONZE</div>
+                        </a>
+                        <a class="h__packages-level-nav" data-id="silver">
+                            <div class="h__packages-level-nav-txt">SILVER</div>
+                        </a>
+                        <a class="h__packages-level-nav" data-id="gold">
+                            <div class="h__packages-level-nav-txt">GOLD</div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="h__packages-level-content-wrap active" data-id="bronze">
+                    
+                    <div class="h__packages-level-contents mb-3">
+                        <div class="row">
+                        
+                            <div class="col-4">
+                                <div class="h__packages-level-content-img-wrap">
+                                    <img class="h__packages-level-content-img" src="/assets/imgs/Rectangle 19.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <div class="h__packages-level-content-desc-wrap">
+                                    <h1 class="h__packages-level-content-heading">BRONZE PACKAGE 1 INCLUSIONS :</h1>
+                                    <ul class="h__packages-level-content-desc">
+                                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                                        <li>Eligendi laboriosam totam incidunt eveniet dolores consequuntur at, mollitia ad perferendis facere consequatur libero vero ipsa.</li>
+                                        <li>Nostrum voluptatibus similique quis corrupti autem culpa sed, ducimus ullam sunt a non magnam.</li>
+                                        <li>Voluptatibus cupiditate quos ipsum eos nulla fuga voluptatum molestias id autem vero delectus et, omnis ea nemo repellendus neque quam!</li>
+                                    </ul>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+                    
+                    <div class="h__packages-level-contents mb-3">
+                        <div class="row">
+                        
+                            <div class="col-4">
+                                <div class="h__packages-level-content-img-wrap">
+                                    <img class="h__packages-level-content-img" src="/assets/imgs/Rectangle 19.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <div class="h__packages-level-content-desc-wrap">
+                                    <h1 class="h__packages-level-content-heading">BRONZE PACKAGE 2 INCLUSIONS :</h1>
+                                    <ul class="h__packages-level-content-desc">
+                                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                                        <li>Eligendi laboriosam totam incidunt eveniet dolores consequuntur at, mollitia ad perferendis facere consequatur libero vero ipsa.</li>
+                                        <li>Nostrum voluptatibus similique quis corrupti autem culpa sed, ducimus ullam sunt a non magnam.</li>
+                                        <li>Voluptatibus cupiditate quos ipsum eos nulla fuga voluptatum molestias id autem vero delectus et, omnis ea nemo repellendus neque quam!</li>
+                                    </ul>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="h__packages-level-content-wrap" data-id="silver">
+                    
+                    <div class="h__packages-level-contents mb-3">
+                        <div class="row">
+                        
+                            <div class="col-4">
+                                <div class="h__packages-level-content-img-wrap">
+                                    <img class="h__packages-level-content-img" src="/assets/imgs/Rectangle 19.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <div class="h__packages-level-content-desc-wrap">
+                                    <h1 class="h__packages-level-content-heading">SILVER PACKAGE 1 INCLUSIONS :</h1>
+                                    <ul class="h__packages-level-content-desc">
+                                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                                        <li>Eligendi laboriosam totam incidunt eveniet dolores consequuntur at, mollitia ad perferendis facere consequatur libero vero ipsa.</li>
+                                        <li>Nostrum voluptatibus similique quis corrupti autem culpa sed, ducimus ullam sunt a non magnam.</li>
+                                        <li>Voluptatibus cupiditate quos ipsum eos nulla fuga voluptatum molestias id autem vero delectus et, omnis ea nemo repellendus neque quam!</li>
+                                    </ul>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+                    
+                    <div class="h__packages-level-contents mb-3">
+                        <div class="row">
+                        
+                            <div class="col-4">
+                                <div class="h__packages-level-content-img-wrap">
+                                    <img class="h__packages-level-content-img" src="/assets/imgs/Rectangle 19.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <div class="h__packages-level-content-desc-wrap">
+                                    <h1 class="h__packages-level-content-heading">SILVER PACKAGE 2 INCLUSIONS :</h1>
+                                    <ul class="h__packages-level-content-desc">
+                                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                                        <li>Eligendi laboriosam totam incidunt eveniet dolores consequuntur at, mollitia ad perferendis facere consequatur libero vero ipsa.</li>
+                                        <li>Nostrum voluptatibus similique quis corrupti autem culpa sed, ducimus ullam sunt a non magnam.</li>
+                                        <li>Voluptatibus cupiditate quos ipsum eos nulla fuga voluptatum molestias id autem vero delectus et, omnis ea nemo repellendus neque quam!</li>
+                                    </ul>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="h__packages-level-content-wrap" data-id="gold">
+                    
+                    <div class="h__packages-level-contents mb-3">
+                        <div class="row">
+                        
+                            <div class="col-4">
+                                <div class="h__packages-level-content-img-wrap">
+                                    <img class="h__packages-level-content-img" src="/assets/imgs/Rectangle 19.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <div class="h__packages-level-content-desc-wrap">
+                                    <h1 class="h__packages-level-content-heading">GOLD PACKAGE 1 INCLUSIONS :</h1>
+                                    <ul class="h__packages-level-content-desc">
+                                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                                        <li>Eligendi laboriosam totam incidunt eveniet dolores consequuntur at, mollitia ad perferendis facere consequatur libero vero ipsa.</li>
+                                        <li>Nostrum voluptatibus similique quis corrupti autem culpa sed, ducimus ullam sunt a non magnam.</li>
+                                        <li>Voluptatibus cupiditate quos ipsum eos nulla fuga voluptatum molestias id autem vero delectus et, omnis ea nemo repellendus neque quam!</li>
+                                    </ul>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+                    
+                    <div class="h__packages-level-contents mb-3">
+                        <div class="row">
+                        
+                            <div class="col-4">
+                                <div class="h__packages-level-content-img-wrap">
+                                    <img class="h__packages-level-content-img" src="/assets/imgs/Rectangle 19.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <div class="h__packages-level-content-desc-wrap">
+                                    <h1 class="h__packages-level-content-heading">GOLD PACKAGE 2 INCLUSIONS :</h1>
+                                    <ul class="h__packages-level-content-desc">
+                                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                                        <li>Eligendi laboriosam totam incidunt eveniet dolores consequuntur at, mollitia ad perferendis facere consequatur libero vero ipsa.</li>
+                                        <li>Nostrum voluptatibus similique quis corrupti autem culpa sed, ducimus ullam sunt a non magnam.</li>
+                                        <li>Voluptatibus cupiditate quos ipsum eos nulla fuga voluptatum molestias id autem vero delectus et, omnis ea nemo repellendus neque quam!</li>
+                                    </ul>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- BLOGS -->
+        <section class="h__blogs-wrap">
+            <div class="container">
+                <div class="h__blogs-header-wrap">
+                    <div class="h__blogs-heading-wrap">
+                        <p class="h__blogs-subheading">Get Inspired for Your Next Adventure</p>
+                        <h1 class="h__blogs-heading">Explore Our Latest Blogs</h1>
+                    </div>
+                    <div class="h__blogs-btn-wrap">
+                        <a class="h__blogs-btn" href="#">Read More <img src="/assets/icons/Arrow 1.svg" alt=""></a>
+                    </div>
+                </div>
+
+                <div class="h__blogs-content-main-wrap">
+                    <div class="row">
+                        
+                        <div class="col-4">
+                            <div class="h__blogs-content-wrap">
+                                <div class="h__blogs-content-img-wrap">
+                                    <img class="h__blogs-content-img" src="/assets/imgs/Rectangle 19.png" alt="">
+                                </div>
+                                <div class="h__blogs-content-desc-wrap">
+                                    <p class="h__blogs-content-date">04/28/23 <span class="h__blogs-content-date-separator">-</span> <span class="h__blogs-content-tag">Travel Updates</span></p>
+                                    <h1 class="h__blogs-content-heading">This is just a sample headline</h1>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-4">
+                            <div class="h__blogs-content-wrap">
+                                <div class="h__blogs-content-img-wrap">
+                                    <img class="h__blogs-content-img" src="/assets/imgs/Rectangle 19.png" alt="">
+                                </div>
+                                <div class="h__blogs-content-desc-wrap">
+                                    <p class="h__blogs-content-date">04/28/23 <span class="h__blogs-content-date-separator">-</span> <span class="h__blogs-content-tag">Travel Updates</span></p>
+                                    <h1 class="h__blogs-content-heading">This is just a sample headline</h1>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-4">
+                            <div class="h__blogs-content-wrap">
+                                <div class="h__blogs-content-img-wrap">
+                                    <img class="h__blogs-content-img" src="/assets/imgs/Rectangle 19.png" alt="">
+                                </div>
+                                <div class="h__blogs-content-desc-wrap">
+                                    <p class="h__blogs-content-date">04/28/23 <span class="h__blogs-content-date-separator">-</span> <span class="h__blogs-content-tag">Travel Updates</span></p>
+                                    <h1 class="h__blogs-content-heading">This is just a sample headline</h1>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section class="h__contact-wrap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="h__contact-left-wrap">
+                            <div class="h__contact-heading-wrap">
+                                <p class="h__contact-subheading">Stay Updated</p>
+                                <h2 class="h__contact-heading">Follow US Now!</h2>
+                            </div>
+                            <div class="h__contact-left-follow-wrap">
+                                <a href="#" class="h__contact-left-follow-links"><i class="fa-brands fa-instagram"></i> @TravelWithAdventureGo</a>
+                                <a href="#" class="h__contact-left-follow-links"><i class="fa-brands fa-twitter"></i> @TravelWithAdventureGo</a>
+                                <a href="mailto:travelnow@adventurego.com" class="h__contact-left-follow-links"><i class="fa-solid fa-envelope"></i> travelnow@adventurego.com</a>
+                                <a href="tel:+63 912-345-6789" class="h__contact-left-follow-links"><i class="fa-solid fa-phone"></i> +63 912-345-6789</a>
+                            </div>
+                            <div class="h__contact-heading-wrap">
+                                <p class="h__contact-subheading">Our Location</p>
+                                <h2 class="h__contact-heading">Where To Find Us?</h2>
+                            </div>
+                            <div class="h__contact-left-map-wrap">
+                                <div style="overflow:hidden;resize:none;max-width:100%;width:100%;height:200px;border-radius: 5px;">
+                                    <div id="google-maps-display" style="height:100%; width:100%;max-width:100%;">
+                                        <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Cabangan,+Zambales,+Philippines&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8">
+                                        </iframe>
+                                    </div>
+                                    <style>
+                                        #google-maps-display img{
+                                            max-height:none;
+                                            max-width:none!important;
+                                            background:none!important;
+                                        }
+                                    </style>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-8">
+                        <div class="h__contact-right-wrap">
+                            <div class="h__contact-heading-wrap">
+                                <p class="h__contact-subheading">Let's Stay Connected</p>
+                                <h2 class="h__contact-heading">Contact US Now!</h2>
+                            </div>
+                            <div class="h__contact-form-wrap">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                                            <input type="text" name="f_name" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                                            <input type="text" name="l_name" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                                            <input type="email" name="email" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                                            <textarea class="form-control form-control-lg" name="message" id="exampleFormControlTextarea1" rows="5"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="h__contact-form-btn-wrap">
+                                        <button class=" cbtn cbtn-primary cbtn-w-arrow h__contact-form-btn" type="submit">SEND <img src="/assets/icons/Arrow 1.svg" alt=""></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER SECTION -->
+        <section class="footer__main-wrap">
+            <div class="container">
+                <div class="footer__main-inner-wrap">
+                    <div class="footer__main-logo-wrap">
+                        <p class="footer__main-logo mb-0"><a href="#">AdventureGo</a> © 2023</p>
+                    </div>
+                    <div class="footer__main-links-wrap">
+                        <ul class="d-flex align-items-center gap-4 mb-0">
+                            <li class="footer__main-links"><a href="#">Privacy Policy</a></li>
+                            <li class="footer__main-links"><a href="#">Terms of Use</a></li>
+                            <li class="footer__main-links"><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- BOOTSTRAP -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js" integrity="sha512-1/RvZTcCDEUjY/CypiMz+iqqtaoQfAITmNSJY17Myp4Ms5mdxPS5UV7iOfdZoxcGhzFbOm6sntTKJppjvuhg4g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- SLICK CAROUSEL -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+        <!-- SCRIPT -->
+        <script>
+            jQuery(function($) {
+                $(document).ready(function () {
+                    $('.h__banner-right-slider').slick({
+                        infinite: true,
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        dots: false,
+                        arrows: false,
+                        focusOnSelect: true
+                    });
+
+                    $('.h__discover-places-slider').slick({
+                        infinite: true,
+                        slidesToShow: 4,
+                        slidesToScroll: 1,
+                        dots: false,
+                        arrows: true,
+                        prevArrow: $('.h__discover-arrows-left'),
+                        nextArrow: $('.h__discover-arrows-right')
+                    });
+
+
+                    const promoNav = $('.h__packages-level-nav');
+                    const promoContent = $('.h__packages-level-content-wrap');
+                    promoNav.each(function() {
+                        $(this).click(function() {
+                            var id = $(this).data('id');
+                            
+                            promoContent.removeClass('active');
+                            promoNav.removeClass('active');
+                            promoContent.filter('[data-id="' + id + '"]').addClass('active');
+                            $(this).addClass('active');
+                        });
+                    });
+
+                    var bannerHeading = $('.h__banner-right-heading');
+                    var bannerHeadingOverlay = $('.h__banner-right-heading-back');
+                    var bannerMainContainer = $('#banner-right-col');
+                    var bannerSlides = $('.h__banner-right-slide-item');
+
+                    function setActiveSlideContent() {
+                        var activeSlide = $('.h__banner-right-slide-item.slick-slide.slick-active.slick-current');
+                        var activeSlideText = activeSlide.find('.h__banner-right-slide-item-location').text();
+                        var activeSlideImg = activeSlide.find('img').attr('src');
+                        
+                        bannerMainContainer.css({
+                            'background': 'url("' + activeSlideImg + '") no-repeat center center',
+                            'background-size': 'cover'
+                        });
+
+                        bannerHeading.text(activeSlideText);
+                        bannerHeadingOverlay.text(activeSlideText);
+                    }
+
+                    bannerSlides.on('click', function() {
+                        setActiveSlideContent();
+                    });
+                    setActiveSlideContent();
+
+
+                    $(window).scroll(function() {
+                        var header = $('#main-header');
+                        if ($(this).scrollTop() > 0) {
+                            header.addClass('scrolled');
+                            $('.header__menu-links-wrap').addClass('scrolled');
+                        } else {
+                            header.removeClass('scrolled');
+                            $('.header__menu-links-wrap').removeClass('scrolled');
+                        }
+                    });
+
+                    $('.header__menu-icon-wrap').on('click', function() {
+
+                        const menu = $('.header__menu-links-wrap');
+
+                        $(this).toggleClass('toggle-open');
+                        menu.toggleClass('show');
+
+                        // $(document).on('click', function(e){
+                        //     if (event.target !== menu) {
+                        //         menu.removeClass('show');
+                        //     }
+                        // })
+
+                    });
+
+                })
+            })
+        </script>
+
+    </body>
+</html>
