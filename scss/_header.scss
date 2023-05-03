@@ -154,6 +154,16 @@
                 display: flex;
                 align-items: center;
                 transition: all ease-in-out 300ms;
+                @include media('<=tablet')
+                {
+                    width: 100%;
+                    right: -100%;
+                    justify-content: center;
+                    li 
+                    {
+                        text-align: center;
+                    }
+                }
                 &.show
                 {
                     right: 0;

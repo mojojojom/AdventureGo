@@ -59,11 +59,11 @@
                 <div class="row">
 
                     <!-- LEFT COLUMN -->
-                    <div class="col-6">
+                    <div class="col-sm-12 col-md-12 col-lg-6">
                         <div class="h__banner-left-wrap">
                             <div class="h__banner-heading-wrap">
                                 <h1 class="h__banner-heading">
-                                    Explore the<br>World with<br><span>AdventureGo</span>
+                                    Explore the<br> World with<br><span> AdventureGo</span>
                                 </h1>
                                 <p class="h__banner-subheading">Lorem ipsum dolor sit, amet consectetur adipisicing elit. In sequi similique quis corrupti quae obcaecati dolorem aperiam dignissimos reprehenderit veniam! Quo, debitis. Beatae cum eveniet eligendi. Maiores explicabo dolores neque.</p>
                             </div>
@@ -108,7 +108,7 @@
                     </div>
 
                     <!-- RIGHT COLUMN -->
-                    <div class="col-6">
+                    <div class="col-sm-12 col-md-12 col-lg-6">
                         <div class="h__banner-right-wrap" id="banner-right-col">
                             <div class="overlay"></div>
                             <div class="h__banner-right-heading-wrap">
@@ -117,8 +117,8 @@
                             </div>
 
                             <div class="row h__banner-right-slider-main-wrap">
-                                <div class="col-2"></div>
-                                <div class="col-10">
+                                <div class="col-sm-12 col-xl-2"></div>
+                                <div class="col-sm-12 col-xl-10">
                                     <div class="h__banner-right-slider-wrap">
                                         <div class="h__banner-right-slider" id="h__banner-right-slider">
                 
@@ -383,12 +383,12 @@
                     <div class="h__packages-level-contents mb-3">
                         <div class="row">
                         
-                            <div class="col-4">
+                            <div class="col-sm-12 col-md-4">
                                 <div class="h__packages-level-content-img-wrap">
                                     <img class="h__packages-level-content-img" src="/assets/imgs/Rectangle 19.png" alt="">
                                 </div>
                             </div>
-                            <div class="col-8">
+                            <div class="col-sm-12 col-md-8">
                                 <div class="h__packages-level-content-desc-wrap">
                                     <h1 class="h__packages-level-content-heading">BRONZE PACKAGE 1 INCLUSIONS :</h1>
                                     <ul class="h__packages-level-content-desc">
@@ -406,12 +406,12 @@
                     <div class="h__packages-level-contents mb-3">
                         <div class="row">
                         
-                            <div class="col-4">
+                            <div class="col-sm-12 col-md-4">
                                 <div class="h__packages-level-content-img-wrap">
                                     <img class="h__packages-level-content-img" src="/assets/imgs/Rectangle 19.png" alt="">
                                 </div>
                             </div>
-                            <div class="col-8">
+                            <div class="col-sm-12 col-md-8">
                                 <div class="h__packages-level-content-desc-wrap">
                                     <h1 class="h__packages-level-content-heading">BRONZE PACKAGE 2 INCLUSIONS :</h1>
                                     <ul class="h__packages-level-content-desc">
@@ -433,12 +433,12 @@
                     <div class="h__packages-level-contents mb-3">
                         <div class="row">
                         
-                            <div class="col-4">
+                            <div class="col-sm-12 col-md-4">
                                 <div class="h__packages-level-content-img-wrap">
                                     <img class="h__packages-level-content-img" src="/assets/imgs/Rectangle 19.png" alt="">
                                 </div>
                             </div>
-                            <div class="col-8">
+                            <div class="col-sm-12 col-md-8">
                                 <div class="h__packages-level-content-desc-wrap">
                                     <h1 class="h__packages-level-content-heading">SILVER PACKAGE 1 INCLUSIONS :</h1>
                                     <ul class="h__packages-level-content-desc">
@@ -593,7 +593,7 @@
         <section class="h__contact-wrap">
             <div class="container">
                 <div class="row">
-                    <div class="col-4">
+                    <div class="col-sm-12 col-lg-6 col-xl-4">
                         <div class="h__contact-left-wrap">
                             <div class="h__contact-heading-wrap">
                                 <p class="h__contact-subheading">Stay Updated</p>
@@ -626,7 +626,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-8">
+                    <div class="col-sm-12 col-lg-6 col-xl-8 pt-5 pt-md-3 pt-lg-0">
                         <div class="h__contact-right-wrap">
                             <div class="h__contact-heading-wrap">
                                 <p class="h__contact-subheading">Let's Stay Connected</p>
@@ -634,13 +634,13 @@
                             </div>
                             <div class="h__contact-form-wrap">
                                 <div class="row">
-                                    <div class="col-6">
+                                    <div class="col-sm-12 col-xl-6">
                                         <div class="mb-3">
                                             <label for="exampleFormControlInput1" class="form-label">Email address</label>
                                             <input type="text" name="f_name" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="">
                                         </div>
                                     </div>
-                                    <div class="col-6">
+                                    <div class="col-12 col-xl-6">
                                         <div class="mb-3">
                                             <label for="exampleFormControlInput1" class="form-label">Email address</label>
                                             <input type="text" name="l_name" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="">
@@ -706,7 +706,16 @@
                         slidesToScroll: 1,
                         dots: false,
                         arrows: false,
-                        focusOnSelect: true
+                        focusOnSelect: true,
+                        responsive: [
+                            {
+                                breakpoint: 769,
+                                settings: {
+                                    centerMode: true,
+                                    centerPadding: '0px'
+                                }
+                            }
+                        ]
                     });
 
                     $('.h__discover-places-slider').slick({
@@ -716,7 +725,15 @@
                         dots: false,
                         arrows: true,
                         prevArrow: $('.h__discover-arrows-left'),
-                        nextArrow: $('.h__discover-arrows-right')
+                        nextArrow: $('.h__discover-arrows-right'),
+                        responsive: [
+                            {
+                                breakpoint: 769,
+                                settings: {
+                                    slidesToShow: 3
+                                }
+                            }
+                        ]
                     });
 
 
@@ -775,12 +792,6 @@
 
                         $(this).toggleClass('toggle-open');
                         menu.toggleClass('show');
-
-                        // $(document).on('click', function(e){
-                        //     if (event.target !== menu) {
-                        //         menu.removeClass('show');
-                        //     }
-                        // })
 
                     });
 

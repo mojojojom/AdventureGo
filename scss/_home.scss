@@ -3,6 +3,17 @@
     // BANNER
     &banner
     {
+        &-btn
+        {
+            &-wrap
+            {
+                @include media('<=tablet')
+                {
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+        }
         &-wrap
         {
             overflow: hidden;
@@ -15,6 +26,14 @@
                 padding-left: 40px;
                 padding-bottom: 30px;
                 padding-top: 130px;
+                @include media('<=desktop')
+                {
+                    padding: 100px 0 30px 20px;
+                }
+                @include media('<=tablet')
+                {
+                    padding: 100px 20px 50px 20px;
+                }
             }
         }
         &-heading
@@ -28,12 +47,28 @@
                 color: $primary-col;
                 font-weight: 900;
             }
+            @include media('<=desktop')
+            {
+                font-size: 50px;
+                br 
+                {
+                    display: none;
+                }
+            }
+            @include media('<=tablet')
+            {
+                text-align: center;
+            }
         }
         &-subheading
         {
             color: $text-col;
             font-size: 16px;
             font-weight: 400;
+            @include media('<=tablet')
+            {
+                text-align: center;
+            }
         }
 
         // STEPS
@@ -78,6 +113,10 @@
                 font-weight: 900;
                 transition: all ease-in-out 300ms;
                 z-index: 2;
+                @include media('<=desktop')
+                {
+                    font-size: 16px;
+                }
             }
             &-subheading
             {
@@ -95,6 +134,11 @@
                 padding: 0 10px;
                 transition: all ease-in-out 300ms;
                 z-index: 2;
+                @include media('<=desktop')
+                {
+                    font-size: 14px;
+                    font-weight: 500;
+                }
             }
         }
 
@@ -124,6 +168,10 @@
                     left: 50%;
                     transform: translate(-50%, -50%);
                     z-index: 2;
+                    @include media('<=tablet')
+                    {
+                        position: relative;
+                    }
                 }
                 color: $light-col;
                 font-size: 80px;
@@ -132,6 +180,10 @@
                 position: relative;
                 text-align: center;
                 text-transform: uppercase;
+                @include media('<=desktop')
+                {
+                    font-size: 60px;
+                }
                 &-back
                 {
                     color: $light-col;
@@ -146,6 +198,10 @@
                     opacity: 0.3;
                     z-index: 1;
                     text-transform: uppercase;
+                    @include media('<=desktop')
+                    {
+                        font-size: 80px;
+                    }
                 }
             }
             &-slider
@@ -157,14 +213,25 @@
                         position: absolute;
                         width: 100%;
                         bottom: 0;
+                        @include media('<=desktop')
+                        {
+                            right: 10px;
+                            bottom: 0;
+                            z-index: 5;
+                        }
+                        @include media('<=tablet')
+                        {
+                            position: relative;
+                            right: 0;
+                            padding-top: 80px;
+                            margin: 0;
+                        }
                     }
                 }
                 z-index: 5;
                 &-wrap
                 {
                     padding-bottom: 30px;
-                    position:static;
-                    bottom: 0;
                 }
             }
             &-slide
@@ -202,6 +269,10 @@
                         {
                             font-size: 18px;
                             text-transform: uppercase;
+                            @include media('<=desktop')
+                            {
+                                font-size: 16px;
+                            }
                         }
                         .overlay
                         {
@@ -267,6 +338,10 @@
             font-weight: 900;
             font-size: 30px;
             color: $light-col;
+            &-wrap
+            {
+                padding-bottom: 30px;
+            }
         }
         &-subheading
         {
@@ -305,11 +380,23 @@
                                 &-wrap
                                 {
                                     padding: 15px;
+                                    @include media('<=desktop')
+                                    {
+                                        padding: 10px;
+                                    }
                                 }
                                 font-size: 25px;
+                                @include media('<=desktop')
+                                {
+                                    font-size: 20px;
+                                }
                                 &-country
                                 {
                                     font-size: 18px;
+                                    @include media('<=desktop')
+                                    {
+                                        font-size: 14px;
+                                    }
                                 }
                             }
                         }
@@ -326,9 +413,17 @@
                                     padding: 10px;
                                 }
                                 font-size: 16px;
+                                @include media('<=desktop')
+                                {
+                                    font-size: 14px;
+                                }
                                 &-country
                                 {
                                     font-size: 12px;
+                                    @include media('<=desktop')
+                                    {
+                                        font-size: 10px;
+                                    }
                                 }
                             }
                         }
@@ -345,9 +440,17 @@
                                     padding: 10px;
                                 }
                                 font-size: 16px;
+                                @include media('<=desktop')
+                                {
+                                    font-size: 14px;
+                                }
                                 &-country
                                 {
                                     font-size: 12px;
+                                    @include media('<=desktop')
+                                    {
+                                        font-size: 10px;
+                                    }
                                 }
                             }
                         }
@@ -366,11 +469,23 @@
                                 &-wrap
                                 {
                                     padding: 15px;
+                                    @include media('<=desktop')
+                                    {
+                                        padding: 10px;
+                                    }
                                 }
                                 font-size: 25px;
+                                @include media('<=desktop')
+                                {
+                                    font-size: 20px;
+                                }
                                 &-country
                                 {
                                     font-size: 18px;
+                                    @include media('<desktop')
+                                    {
+                                        font-size: 14px;
+                                    }
                                 }
                             }
                         }
@@ -385,11 +500,23 @@
                                 &-wrap
                                 {
                                     padding: 15px;
+                                    @include media('<=desktop')
+                                    {
+                                        padding: 10px;
+                                    }
                                 }
                                 font-size: 25px;
+                                @include media('<=desktop')
+                                {
+                                    font-size: 20px;
+                                }
                                 &-country
                                 {
                                     font-size: 18px;
+                                    @include media('<=desktop')
+                                    {
+                                        font-size: 14px;
+                                    }
                                 }
                             }
                         }
@@ -421,6 +548,12 @@
                     grid-template-rows: repeat(4, 1fr);
                     grid-column-gap: 10px;
                     grid-row-gap: 10px;
+                    @include media('<=tablet')
+                    {
+                        display: flex;
+                        flex-wrap: wrap;
+                        flex-direction: column;
+                    }
                 }
             }
 
@@ -430,6 +563,14 @@
                 font-size: 30px;
                 font-weight: 900;
                 margin-bottom: 0;
+                @include media('<=desktop')
+                {
+                    font-size: 25px;
+                }
+                @include media('<=tablet')
+                {
+                    font-size: 25px!important;
+                }
                 &-wrap
                 {
                     z-index: 2 ;
@@ -440,6 +581,10 @@
                     padding: 20px;
                     text-align: center;
                     transform: translate(-50%, -50%);
+                    @include media('<=desktop')
+                    {
+                        padding: 10px;
+                    }
                 }
                 &-country
                 {
@@ -447,6 +592,14 @@
                     font-weight: 900;
                     color: $light-col;
                     text-transform: uppercase;
+                    @include media('<=desktop')
+                    {
+                        font-size: 16px;
+                    }
+                    @include media('<=tablet')
+                    {
+                        font-size: 16px!important;
+                    }
                 }
             }
         }
@@ -560,13 +713,6 @@
         &-wrap
         {
             padding: 50px 0;
-
-            // div[data-id="silver"],
-            // div[data-id="gold"]
-            // {
-            //     display: none;
-            // }
-
         }
         &-heading
         {
@@ -606,6 +752,10 @@
                         width: 40%;
                         padding: 10px;
                         border-radius: 100px;
+                        @include media('<=desktop')
+                        {
+                            width: 100%;
+                        }
                     }
                 }
                 padding: 10px 30px;
@@ -621,6 +771,11 @@
                     color: $light-col;
                     font-weight: 900;
                     transition: all ease-in-out 300ms;
+                    font-size: 20px;
+                    @include media('<=tablet')
+                    {
+                        font-size: 18px;
+                    }
                 }
                 &:hover, &.active
                 {
@@ -658,6 +813,10 @@
                     font-size: 25px;
                     font-weight: 900;
                     color: $primary-col;
+                    @include media('<=tablet')
+                    {
+                        font-size: 20px;
+                    }
                 }
                 &-desc
                 {
@@ -667,11 +826,17 @@
                         font-size: 16px;
                         font-weight: 400;
                         color: $text-col;
+                        margin-bottom: 2px;
                         &::before
                         {
                             font-family: 'Fontawesome';
-                            content: "\f543"; /* add custom icon */
-                            margin-right: 5px; /* add spacing between icon and text */
+                            content: "\f543";
+                            margin-right: 5px;
+                            color: $primary-col;
+                        }
+                        @include media('<=tablet')
+                        {
+                            font-size: 14px;
                         }
                     }
                 }
@@ -751,6 +916,10 @@
                 font-weight: normal;
                 font-size: 14px;
                 margin: 10px 0;
+                @include media('<=tablet')
+                {
+                    font-size: 10px;
+                }
             }
             &-tag
             {
@@ -762,6 +931,10 @@
                 color: $primary-col;
                 font-size: 20px;
                 font-weight: 700;
+                @include media('<=tablet')
+                {
+                    font-size: 16px;
+                }
             }
         }
     }
@@ -819,6 +992,10 @@
                     {
                         color: $primary-col;
                     }
+                    @include media('<=tablet')
+                    {
+                        display: block;
+                    }
                 }
                 &-wrap
                 {
@@ -828,6 +1005,16 @@
         }
 
         // RIGHT
+        &-right
+        {
+            &-wrap
+            {
+                @include media('<=tablet')
+                {
+                    padding-bottom: 30px;
+                }
+            }
+        }
         &-form
         {
             &-btn

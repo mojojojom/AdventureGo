@@ -37,6 +37,7 @@ ul
     {
         display: inline-flex;
         gap: 10px;
+        align-items: center;
     }
     &-primary
     {
@@ -57,6 +58,17 @@ ul
     &:hover
     {
         color: $light-col;
+    }
+    @include media('<=desktop')
+    {
+        padding: 10px 30px;
+        &-w-arrow
+        {
+            img
+            {
+                width: 50px;
+            }
+        }
     }
 }
 
