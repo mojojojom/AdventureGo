@@ -60,6 +60,14 @@
             {
                 text-align: center;
             }
+            @include media('<=lg-phone')
+            {
+                font-size: 40px;
+            }
+            @include media('<=phone')
+            {
+                font-size: 30px;
+            }
         }
         &-subheading
         {
@@ -69,6 +77,10 @@
             @include media('<=tablet')
             {
                 text-align: center;
+            }
+            @include media('<=lg-phone')
+            {
+                font-size: 14px;
             }
         }
 
@@ -185,6 +197,14 @@
                 {
                     font-size: 60px;
                 }
+                @include media('<=lg-phone')
+                {
+                    font-size: 50px;
+                }
+                @include media('<=phone')
+                {
+                    font-size: 35px;
+                }
                 &-back
                 {
                     color: $light-col;
@@ -202,6 +222,14 @@
                     @include media('<=desktop')
                     {
                         font-size: 80px;
+                    }
+                    @include media('<=lg-phone')
+                    {
+                        font-size: 60px;
+                    }
+                    @include media('<=phone')
+                    {
+                        font-size: 50px;
                     }
                 }
             }
@@ -333,6 +361,10 @@
         {
             background-color: $primary-col;
             padding: 50px 0;
+            @include media('<=lg-phone')
+            {
+                padding: 30px 0;
+            }
         }
         &-heading
         {
@@ -342,6 +374,18 @@
             &-wrap
             {
                 padding-bottom: 30px;
+                @include media('<=lg-phone')
+                {
+                    padding-bottom: 20px;
+                }
+            }
+            @include media('<=lg-phone')
+            {
+                font-size: 25px;
+            }
+            @include media('<=phone')
+            {
+                font-size: 22px;
             }
         }
         &-subheading
@@ -350,6 +394,14 @@
             color: $light-col;
             font-weight: 900;
             font-size: 18px;
+            @include media('<=lg-phone')
+            {
+                font-size: 16px;
+            }
+            @include media('<=phone')
+            {
+                font-size: 14px;
+            }
         }
         &-place
         {
@@ -572,6 +624,10 @@
                 {
                     font-size: 25px!important;
                 }
+                @include media('<=phone')
+                {
+                    font-size: 22px!important;
+                }
                 &-wrap
                 {
                     z-index: 2 ;
@@ -601,6 +657,10 @@
                     {
                         font-size: 16px!important;
                     }
+                    @include media('<=phone')
+                    {
+                        font-size: 14px!important;
+                    }
                 }
             }
         }
@@ -612,6 +672,10 @@
         &-wrap
         {
             padding: 50px 0;
+            @include media('<=lg-phone')
+            {
+                padding: 30px 0;
+            }
         }
         &-header
         {
@@ -621,6 +685,12 @@
                 justify-content: space-between;
                 align-items: end;
                 padding-bottom: 30px;
+                @include media('<=lg-phone')
+                {
+                    padding-bottom: 20px;
+                    flex-wrap: wrap;
+                    flex-direction: row;
+                }
             }
         }
         &-heading
@@ -629,6 +699,14 @@
             font-size: 30px;
             color: $primary-col;
             margin-bottom: 0;
+            @include media('<=lg-phone')
+            {
+                font-size: 25px;
+            }
+            @include media('<=phone')
+            {
+                font-size: 22px;
+            }
         }
         &-subheading
         {
@@ -636,6 +714,14 @@
             color: $text-col;
             font-weight: 900;
             font-size: 18px;
+            @include media('<=lg-phone')
+            {
+                font-size: 16px;
+            }
+            @include media('<=phone')
+            {
+                font-size: 14px;
+            }
         }
         &-arrows
         {
@@ -644,6 +730,12 @@
                 display: flex;
                 gap: 5px;
                 align-items: center;
+                @include media('<=lg-phone')
+                {
+                    display: flex;
+                    width: 100%;
+                    justify-content: center;
+                }
             }
             cursor: pointer;
             background-color: $light-col;
@@ -697,6 +789,10 @@
                     {
                         width: 100%;
                     }
+                    @include media('<=lg-phone')
+                    {
+                        width: 100%;
+                    }
                 }
             }
             &-img
@@ -714,6 +810,10 @@
         &-wrap
         {
             padding: 50px 0;
+            @include media('<=lg-phone')
+            {
+                padding: 30px 0;
+            }
         }
         &-heading
         {
@@ -721,6 +821,14 @@
             font-size: 30px;
             color: $primary-col;
             margin-bottom: 0;
+            @include media('<=lg-phone')
+            {
+                font-size: 25px;
+            }
+            @include media('<=phone')
+            {
+                font-size: 22px;
+            }
         }
         &-subheading
         {
@@ -728,6 +836,14 @@
             color: $text-col;
             font-weight: 900;
             font-size: 18px;
+            @include media('<=lg-phone')
+            {
+                font-size: 16px;
+            }
+            @include media('<=phone')
+            {
+                font-size: 14px;
+            }
         }
 
         &-level
@@ -741,6 +857,10 @@
                     align-items: center;
                     padding-top: 30px;
                     padding-bottom: 30px;
+                    @include media('<=lg-phone')
+                    {
+                        padding: 20px 0;
+                    }
                 }
                 &-inner
                 {
@@ -757,6 +877,11 @@
                         {
                             width: 100%;
                         }
+                        @include media('<=lg-phone')
+                        {
+                            gap: 5px;
+                            padding: 5px;
+                        }
                     }
                 }
                 padding: 10px 30px;
@@ -767,6 +892,10 @@
                 align-items: center;
                 justify-content: center;
                 width: 100%;
+                @include media('<=lg-phone')
+                {
+                    padding: 5px 20px;
+                }
                 &-txt
                 {
                     color: $light-col;
@@ -776,6 +905,10 @@
                     @include media('<=tablet')
                     {
                         font-size: 14px;
+                    }
+                    @include media('<=phone')
+                    {
+                        font-size: 12px;
                     }
                 }
                 &:hover, &.active
@@ -808,6 +941,10 @@
                     {
                         height: 100%;
                     }
+                    @include media('<=lg-phone')
+                    {
+                        padding-bottom: 10px;
+                    }
                 }
                 &-heading
                 {
@@ -817,6 +954,10 @@
                     @include media('<=tablet')
                     {
                         font-size: 20px;
+                    }
+                    @include media('<=lg-phone')
+                    {
+                        font-size: 18px;
                     }
                 }
                 &-desc
@@ -851,6 +992,10 @@
         &-wrap
         {
             padding: 50px 0;
+            @include media('<=lg-phone')
+            {
+                padding: 30px 0;
+            }
         }
         &-header
         {
@@ -860,6 +1005,11 @@
                 justify-content: space-between;
                 align-items: end;
                 padding-bottom: 30px;
+                @include media('<=lg-phone')
+                {
+                    padding-bottom: 20px;
+                    flex-wrap: wrap;
+                }
             }
         }
         &-heading
@@ -868,6 +1018,14 @@
             font-size: 30px;
             color: $primary-col;
             margin-bottom: 0;
+            @include media('<=lg-phone')
+            {
+                font-size: 25px;
+            }
+            @include media('<=phone')
+            {
+                font-size: 22px;
+            }
         }
         &-subheading
         {
@@ -875,6 +1033,14 @@
             color: $text-col;
             font-weight: 900;
             font-size: 18px;
+            @include media('<=lg-phone')
+            {
+                font-size: 16px;
+            }
+            @include media('<=phone')
+            {
+                font-size: 14px;
+            }
         }
         &-btn
         {
@@ -885,6 +1051,10 @@
             padding: 10px 20px;
             border-radius: 100px;
             transition: all ease-in-out 300ms;
+            @include media('<=lg-phone')
+            {
+                padding: 5px 15px;
+            }
             img 
             {
                 width: 50px;
@@ -894,6 +1064,14 @@
             {
                 color: $light-col;
                 background-color: $text-col;
+            }
+            &-wrap
+            {
+                @include media('<=lg-phone')
+                {
+                    padding-top: 10px;
+                    display: flex;
+                }
             }
         }
 
@@ -921,6 +1099,11 @@
                 {
                     font-size: 10px;
                 }
+                @include media('<=lg-phone')
+                {
+                    font-size: 14px;
+                    margin-bottom: 5px;
+                }
             }
             &-tag
             {
@@ -936,6 +1119,10 @@
                 {
                     font-size: 16px;
                 }
+                @include media('<=lg-phone')
+                {
+                    font-size: 18px;
+                }
             }
         }
     }
@@ -946,6 +1133,10 @@
         &-wrap
         {
             padding: 50px 0;
+            @include media('<=lg-phone')
+            {
+                padding: 30px 0;
+            }
         }
         &-heading
         {
@@ -953,6 +1144,14 @@
             font-size: 30px;
             color: $primary-col;
             margin-bottom: 0;
+            @include media('<=lg-phone')
+            {
+                font-size: 25px;
+            }
+            @include media('<=phone')
+            {
+                font-size: 22px;
+            }
             &-wrap
             {
                 margin-bottom: 20px;
@@ -964,6 +1163,14 @@
             color: $text-col;
             font-weight: 900;
             font-size: 18px;
+            @include media('<=lg-phone')
+            {
+                font-size: 16px;
+            }
+            @include media('<=phone')
+            {
+                font-size: 14px;
+            }
         }
 
         // LEFT
@@ -997,6 +1204,18 @@
                     {
                         display: block;
                     }
+                    @include media('<=lg-phone')
+                    {
+                        display: inline-flex;
+                    }
+                    @include media('<=phone')
+                    {
+                        font-size: 14px;
+                        i
+                        {
+                            font-size: 22px;
+                        }
+                    }
                 }
                 &-wrap
                 {
@@ -1026,6 +1245,36 @@
                 img
                 {
                     width: 50px;
+                }
+                @include media('<=phone')
+                {
+                    padding: 8px 15px!important;
+                }
+            }
+            &-input
+            {
+                &-desc
+                {
+                    font-size: 12px;
+                    color: $desc-col;
+                    font-weight: 400;
+                    margin-top: 2px;
+                }
+            }
+            &-label
+            {
+                font-weight: 900;
+                font-size: 16px;
+                text-transform: uppercase;
+                color: $primary-col;
+                &-required
+                {
+                    color: $warning-col;
+                    font-weight: 900;
+                }
+                @include media('<=phone')
+                {
+                    font-size: 14px;
                 }
             }
         }

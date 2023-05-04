@@ -14,6 +14,8 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <!-- SLICK CAROUSEL -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- AOS -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <!-- CUSTOM CSS -->
         <link rel="stylesheet" href="/style/style.min.css">
     </head>
@@ -65,7 +67,7 @@
                                 <h1 class="h__banner-heading">
                                     Explore the<br> World with<br><span> AdventureGo</span>
                                 </h1>
-                                <p class="h__banner-subheading">Lorem ipsum dolor sit, amet consectetur adipisicing elit. In sequi similique quis corrupti quae obcaecati dolorem aperiam dignissimos reprehenderit veniam! Quo, debitis. Beatae cum eveniet eligendi. Maiores explicabo dolores neque.</p>
+                                <p class="h__banner-subheading">Lorem ipsum dolor sit, amet consectetur adipisicing elit. In sequi similique quis corrupti quae obcaecati reprehenderit veniam! Quo, debitis.</p>
                             </div>
                             <div class="h__banner-btn-wrap">
                                 <a href="#" class="cbtn cbtn-w-arrow cbtn-primary">BOOK NOW <img src="/assets/icons/Arrow 1.svg" alt=""></a>
@@ -74,7 +76,7 @@
                             <div class="h__banner-steps-wrap mt-5">
                                 <div class="row">
 
-                                    <div class="col-4">
+                                    <div class="col-sm-12 col-md-4 mb-3 mb-md-0">
                                         <div class="h__banner-steps-inner-wrap">
                                             <div class="overlay"></div>
                                             <img src="/assets/imgs/step-img-1.png" alt="Steps Background">
@@ -83,7 +85,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-4">
+                                    <div class="col-sm-12 col-md-4 mb-3 mb-md-0">
                                         <div class="h__banner-steps-inner-wrap">
                                             <div class="overlay"></div>
                                             <img src="/assets/imgs/step-img-1.png" alt="Steps Background">
@@ -92,7 +94,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-4">
+                                    <div class="col-sm-12 col-md-4 mb-3 mb-md-0">
                                         <div class="h__banner-steps-inner-wrap">
                                             <div class="overlay"></div>
                                             <img src="/assets/imgs/step-img-1.png" alt="Steps Background">
@@ -195,7 +197,7 @@
         <!-- POPULAR PLACES SECTION -->
         <section class="h__popular-wrap">
             <div class="container">
-                <div class="h__popular-heading-wrap">
+                <div class="h__popular-heading-wrap section__heading-wrap">
                     <p class="h__popular-subheading">What's Popular?</p>
                     <h1 class="h__popular-heading">Places Not To Be Missed</h1>
                 </div>
@@ -272,7 +274,7 @@
         <section class="h__discover-wrap">
             <div class="container">
                 
-                <div class="h__discover-header-wrap">
+                <div class="h__discover-header-wrap section__heading-wrap">
                     <div class="h__discover-heading-wrap">
                         <p class="h__discover-subheading">Wanderlust Awaits</p>
                         <h1 class="h__discover-heading">Discover Your Next Adventure</h1>
@@ -547,7 +549,7 @@
                 <div class="h__blogs-content-main-wrap">
                     <div class="row">
                         
-                        <div class="col-4">
+                        <div class="col-sm-12 col-lg-4 mb-3 mb-md-0">
                             <div class="h__blogs-content-wrap">
                                 <div class="h__blogs-content-img-wrap">
                                     <img class="h__blogs-content-img" src="/assets/imgs/Rectangle 19.png" alt="">
@@ -559,7 +561,7 @@
                             </div>
                         </div>
                         
-                        <div class="col-4">
+                        <div class="col-sm-12 col-lg-4 mb-3 mb-md-0">
                             <div class="h__blogs-content-wrap">
                                 <div class="h__blogs-content-img-wrap">
                                     <img class="h__blogs-content-img" src="/assets/imgs/Rectangle 19.png" alt="">
@@ -571,7 +573,7 @@
                             </div>
                         </div>
                         
-                        <div class="col-4">
+                        <div class="col-sm-12 col-lg-4 mb-3 mb-md-0">
                             <div class="h__blogs-content-wrap">
                                 <div class="h__blogs-content-img-wrap">
                                     <img class="h__blogs-content-img" src="/assets/imgs/Rectangle 19.png" alt="">
@@ -636,25 +638,27 @@
                                 <div class="row">
                                     <div class="col-sm-12 col-xl-6">
                                         <div class="mb-3">
-                                            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                                            <label for="exampleFormControlInput1" class="form-label h__contact-form-label">Name <span class="h__contact-form-label-required">*</span></label>
                                             <input type="text" name="f_name" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="">
+                                            <p class="h__contact-form-input-desc">First</p>
                                         </div>
                                     </div>
                                     <div class="col-12 col-xl-6">
                                         <div class="mb-3">
-                                            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                                            <label for="exampleFormControlInput1" class="form-label h__contact-form-label opacity-0 d-none d-xl-flex">Name</label>
                                             <input type="text" name="l_name" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="">
+                                            <p class="h__contact-form-input-desc">Last</p>
                                         </div>
                                     </div>
                                     <div class="col-12">
                                         <div class="mb-3">
-                                            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                                            <label for="exampleFormControlInput1" class="form-label h__contact-form-label">Email address</label>
                                             <input type="email" name="email" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="">
                                         </div>
                                     </div>
                                     <div class="col-12">
                                         <div class="mb-3">
-                                            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                                            <label for="exampleFormControlTextarea1" class="form-label h__contact-form-label">Message</label>
                                             <textarea class="form-control form-control-lg" name="message" id="exampleFormControlTextarea1" rows="5"></textarea>
                                         </div>
                                     </div>
@@ -694,10 +698,22 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <!-- SLICK CAROUSEL -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- AOS -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <!-- SCROLL REVEL -->
+        <script src="https://unpkg.com/scrollreveal"></script>
 
 
         <!-- SCRIPT -->
         <script>
+
+            // AOS
+            AOS.init();
+
+            // SCROLL REVEAL
+            ScrollReveal({ reset: false });
+
+
             jQuery(function($) {
                 $(document).ready(function () {
                     $('.h__banner-right-slider').slick({
@@ -713,6 +729,12 @@
                                 settings: {
                                     centerMode: true,
                                     centerPadding: '0px'
+                                }
+                            },
+                            {
+                                breakpoint: 600,
+                                settings: {
+                                    slidesToShow: 2
                                 }
                             }
                         ]
@@ -731,6 +753,18 @@
                                 breakpoint: 769,
                                 settings: {
                                     slidesToShow: 3
+                                }
+                            },
+                            {
+                                breakpoint: 600,
+                                settings: {
+                                    slidesToShow: 2
+                                }
+                            },
+                            {
+                                breakpoint: 430,
+                                settings: {
+                                    slidesToShow: 1
                                 }
                             }
                         ]

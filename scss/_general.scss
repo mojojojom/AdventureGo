@@ -11,6 +11,7 @@ body
 {
     background-color: $light-col;
     font-family: 'Unbounded', cursive;
+    transition: all ease-in-out 300ms;
 }
 
 a
@@ -70,6 +71,10 @@ ul
             }
         }
     }
+    @include media('<=lg-phone')
+    {
+        font-size: 14px;
+    }
 }
 
 
@@ -103,6 +108,10 @@ ul
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
+                @include media('<=lg-phone')
+                {
+                    display: block;
+                }
             }
         }
         &-logo
@@ -115,6 +124,14 @@ ul
                 font-weight: 900;
                 transition: all ease-in-out 300ms;
             }
+            &-wrap
+            {
+                @include media('<=lg-phone')
+                {
+                    display: flex;
+                    justify-content: center;
+                }
+            }
         }
         &-links
         {
@@ -123,6 +140,29 @@ ul
                 color: $light-col;
                 font-size: 14px;
                 font-weight: 300;
+                @include media('<=phone')
+                {
+                    font-size: 12px;
+                }
+            }
+            &-wrap
+            {
+                @include media('<=lg-phone')
+                {
+                    display: flex;
+                    justify-content: center;
+                    ul 
+                    {
+                        padding: 0;
+                    }
+                }
+                @include media('<=phone')
+                {
+                    ul
+                    {
+                        gap: 10px!important;
+                    }
+                }
             }
         }
     }
