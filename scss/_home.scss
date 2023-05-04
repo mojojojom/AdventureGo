@@ -1547,6 +1547,14 @@
                 {
                     font-size: 14px;
                 }
+                &-2
+                {
+                    opacity: 0;
+                    @include media('<=tablet')
+                    {
+                        opacity: 1;
+                    }
+                }
             }
         }
     }
