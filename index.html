@@ -399,15 +399,15 @@
 
                 <div class="h__packages-level-nav-wrap">
                     <div class="h__packages-level-nav-inner-wrap">
-                        <a class="h__packages-level-nav active" data-id="bronze">
+                        <div class="h__packages-level-nav active" data-id="bronze">
                             <div class="h__packages-level-nav-txt">BRONZE</div>
-                        </a>
-                        <a class="h__packages-level-nav" data-id="silver">
+                        </div>
+                        <div class="h__packages-level-nav" data-id="silver">
                             <div class="h__packages-level-nav-txt">SILVER</div>
-                        </a>
-                        <a class="h__packages-level-nav" data-id="gold">
+                        </div>
+                        <div class="h__packages-level-nav" data-id="gold">
                             <div class="h__packages-level-nav-txt">GOLD</div>
-                        </a>
+                        </div>
                     </div>
                 </div>
 
@@ -642,27 +642,27 @@
                                 <div class="row">
                                     <div class="col-sm-12 col-xl-6">
                                         <div class="mb-3">
-                                            <label for="exampleFormControlInput1" class="form-label h__contact-form-label">Name <span class="h__contact-form-label-required">*</span></label>
+                                            <label for="firstName" class="form-label h__contact-form-label">Name <span class="h__contact-form-label-required">*</span></label>
                                             <input type="text" name="f_name" class="form-control form-control-lg" id="firstName" placeholder="">
                                             <p class="h__contact-form-input-desc">First</p>
                                         </div>
                                     </div>
                                     <div class="col-12 col-xl-6">
                                         <div class="mb-3">
-                                            <label for="exampleFormControlInput1" class="form-label h__contact-form-label opacity-0 d-none d-xl-flex">Name</label>
+                                            <label for="lastName class="form-label h__contact-form-label opacity-0 d-none d-xl-flex">Name</label>
                                             <input type="text" name="l_name" class="form-control form-control-lg" id="lastName" placeholder="">
                                             <p class="h__contact-form-input-desc">Last</p>
                                         </div>
                                     </div>
                                     <div class="col-12">
                                         <div class="mb-3">
-                                            <label for="exampleFormControlInput1" class="form-label h__contact-form-label">Email address</label>
+                                            <label for="emailAddress" class="form-label h__contact-form-label">Email address</label>
                                             <input type="email" name="email" class="form-control form-control-lg" id="emailAddress" placeholder="">
                                         </div>
                                     </div>
                                     <div class="col-12">
                                         <div class="mb-3">
-                                            <label for="exampleFormControlTextarea1" class="form-label h__contact-form-label">Message</label>
+                                            <label for="userMessage" class="form-label h__contact-form-label">Message</label>
                                             <textarea class="form-control form-control-lg" name="message" id="userMessage" rows="5"></textarea>
                                         </div>
                                     </div>
@@ -698,7 +698,6 @@
 
 
         <!-- BOOTSTRAP -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js" integrity="sha512-1/RvZTcCDEUjY/CypiMz+iqqtaoQfAITmNSJY17Myp4Ms5mdxPS5UV7iOfdZoxcGhzFbOm6sntTKJppjvuhg4g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <!-- SLICK CAROUSEL -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -833,7 +832,7 @@
                     // Set a timeout of 500 milliseconds (0.5 seconds)
                     setTimeout(function() {
                         // Do the actual scrolling
-                        console.log("Scrolling...");
+                        // console.log("Scrolling...");
                         
                         // Set the scrolling flag to false
                         isScrolling = false;
