@@ -42,9 +42,13 @@
             color: $primary-col;
             font-size: 26px;
             font-weight: 900;
+            @include media('<=lg-phone')
+            {
+                font-size: 20px;
+            }
             @include media('<=phone')
             {
-                font-size: 22px;
+                font-size: 18px;
             }
         }
     }
