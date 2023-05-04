@@ -386,8 +386,9 @@
                 box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 24px;
                 input.search-form 
                 {
-                    font-size: 18px;
+                    font-size: 16px;
                     margin: 0;
+                    height: 100%;
                     border: none;
                     display: flex;
                     background-color: $light-col;
