@@ -29,7 +29,7 @@
                 padding-right: 20px;
                 @include media('<=desktop')
                 {
-                    padding: 100px 10px 30px 20px;
+                    padding: 100px 10px 80px 20px;
                 }
                 @include media('<=tablet')
                 {
@@ -95,6 +95,7 @@
                     border-radius: 5px;
                     overflow: hidden;
                     height: 150px;
+                    cursor: default;
                     img
                     {
                         object-fit: cover;
@@ -216,7 +217,7 @@
                     top: 30%;
                     left: 50%;
                     transform: translate(-50%, -60%);
-                    opacity: 0.3;
+                    opacity: 0.2;
                     z-index: 1;
                     text-transform: uppercase;
                     @include media('<=desktop')
@@ -261,6 +262,10 @@
                 &-wrap
                 {
                     padding-bottom: 80px;
+                    @include media('<=lg-phone')
+                    {
+                        padding-bottom: 40px;
+                    }
                 }
             }
             &-slide
@@ -366,6 +371,11 @@
                 top: -4%;
                 width: 100%;
                 left: 0;
+                @include media('<=tablet')
+                {
+                    position: absolute;
+                    top: -20px;
+                }
             }
             &-main
             {
@@ -384,6 +394,10 @@
                 padding: 10px;
                 display: flex;
                 box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 24px;
+                @include media('<=tablet')
+                {
+                    padding: 5px;
+                }
                 input.search-form 
                 {
                     font-size: 16px;
@@ -391,12 +405,17 @@
                     height: 100%;
                     border: none;
                     display: flex;
-                    background-color: $light-col;
+                    background-color: unset;
                     width: 100%;
+                    margin-left: 5px;
                     &:focus, &:focus-visible
                     {
                         border: none;
                         outline: 0;
+                    }
+                    @include media('<=lg-phone')
+                    {
+                        font-size: 14px;
                     }
                 }
                 .search-btn
@@ -417,6 +436,26 @@
                     {
                         background-color: $dark-col;
                     }
+                    i 
+                    {
+                        display: none;
+                    }
+                    @include media('<=tablet')
+                    {
+                        font-size: 16px;
+                    }
+                    @include media('<=lg-phone')
+                    {
+                        padding: 10px;
+                        span, img 
+                        {
+                            display: none;
+                        }
+                        i 
+                        {
+                            display: flex;
+                        }
+                    }
                 }
             }
         }
@@ -433,6 +472,10 @@
             @include media('<=lg-phone')
             {
                 padding: 30px 0;
+            }
+            @include media('<=tablet')
+            {
+                padding-top: 50px;
             }
         }
         &-heading
@@ -488,6 +531,10 @@
                     position: relative;
                     overflow: hidden;
                     border-radius: 5px;
+                    @include media('<=tablet')
+                    {
+                        max-height: 200px;
+                    }
                     .overlay
                     {
                         border-radius: 5px;

@@ -227,7 +227,7 @@
                 transform: translateY(-50%);
                 transition: all ease-in-out 300ms;
             }
-            &:hover
+            &:hover,&.active
             {
                 color: $light-col;
                 &::after
