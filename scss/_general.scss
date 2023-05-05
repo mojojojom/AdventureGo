@@ -26,6 +26,22 @@ ul
     list-style: none;
 }
 
+// SCROLLBAR
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    background-color: $light-col;
+}
+::-webkit-scrollbar-thumb {
+    background-color: $primary-col;
+    border-radius: 50px;
+}
+::-webkit-scrollbar-button {
+    display: none;
+}
+
+
 
 // BUTTON
 .cbtn
@@ -90,6 +106,7 @@ ul
     background-color: $dark-col;
     opacity: 0.6;
     z-index: 1;
+    transition: all ease-in-out 300ms;
 }
 
 
@@ -167,6 +184,41 @@ ul
                     }
                 }
             }
+        }
+    }
+}
+
+
+
+// PAGES' BANNER
+.banner__
+{
+    &main
+    {
+        &-wrap
+        {
+            background: linear-gradient(0deg, rgba(0,0,0,0.5971638655462185) 100%, rgba(255,255,255,0) 100%), url('../assets/imgs/harlotte-noelle-98wpmltl5xo-unsplash.webp');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100%;
+            width: 100%;
+        }
+    }
+    &content
+    {
+        &-wrap
+        {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 80px 0;
+        }
+        &-title
+        {
+            font-size: 80px;
+            color: $light-col;
+            font-weight: 900;
         }
     }
 }
